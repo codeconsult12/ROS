@@ -1,0 +1,202 @@
+App Name	ROS Installation	
+App Version	2000-07-24 14:11:04	
+Setup Version	3.0.0.0	
+Frame Bitmap		
+Frame Caption	ROS Installation Setup	
+Dialog Caption Base	ROS Installation	
+Usage String	Usage:  Setup	
+About Box String	copyright (c) Charles Bowen\n\nThis installation was created using the Visual FoxPro Setup Wizard.	
+Check Modules	"Fox_4000001,Microsoft Visual FoxPro, graph, MS Graph, ed, MS Draw, msinfo, MS Info, MSOfficeWClass, Microsoft Office Manager, MOM Class, Office Shortcut Bar"	
+Source Directory	E:\ROSTEMP\	
+MSAPPS Mode	local	
+MSAPPS Connect	server	
+Inf File Name	SETUP.INF	
+Help File Name	ACMSETUP.HLP	
+Setup Status	"tgªQ|3£2Œ‰ä«q™@ìâ›""ÌbQ€A´pR‚|qÒ©ÊwÃG§ÁÖN1ƒ©Æ•€‰◊'˝”ÜC≠¶º2FAãªæês≠M“¿RåQNSx)˛»ˇ5=Ã}WQ∫å'õ*Û7Ç∆±PC·=Ñ⁄sÖZz≠‡¿¯ÌÎéÌ˛Sßo@é.8·®K¿˘K€}∑-Bq)6cOOnïAj#“ŒëQìàÊÀ∂{JœÊlmP—ê"	
+Setup Status2	0	
+Maximum Object ID	193	
+Admin Mode Root Object ID		
+Floppy Mode Root Object ID	2 : 1	
+Network Mode Root Object ID		
+Maintenance Mode Root Object ID	3 : 1	
+Network Maintenance Mode Root Object ID		
+Batch Mode Root Object ID	2 : 1	
+Suppress Serial Number Dialog		
+Install Date	2008.08.14.18.12.54	
+Check Modules2		
+Check Modules3		
+Check Modules4		
+
+
+ObjID	Checkbox State	Title	Description	Object Type	Object Data	Bitmap Id	Vital Attribute	Shared Attribute	Configurable Directory	Destination Directory	Check Directory	Installed By	Install Data	Install Directory
+1			Search for previous versions.	AppSearch	"""C:\ROS\"", """", """", 12, ""yes"", ""yes"","					C:\ROS\		us		C:\ROS\
+2		Floppy Installation		AppMainDlg	5				yes	C:\ROS\		us		C:\ROS\
+3		Maintenance Installation		CustomDlg	7					C:\ROS\				
+5	yes		Install all files for ROS Installation	Group	7	"wizset32.dll, 111"						us		C:\ROS\
+7	yes	ROS Installation	ROS Installation will be installed.	Group	8 9 24 13 12 10 11 28 29							us		C:\ROS\
+8			*** ROS Installation Files	CopyFile	"Application,_05Q0UCC5J"		vital					us		C:\ROS\
+9			*** ROS Installation Files	CopySection	Application		vital					us		C:\ROS\
+10			ODBC files	Group	14 15 16 17 18 19 20 21 22 23 25 26							us		C:\ROS\
+11			Microsoft Graph	Group	27 182							us		C:\ROS\
+12			Visual Foxpro Runtime	Group	55 56 57 59 60							us		C:\ROS\
+13			OLEAUT32 System	Group	43 44 46 47 49 50		vital					nyi		
+14				CustomAction	"""WIZSET32.DLL"", ""GetPathFromReg"", ""HKEY_LOCAL_MACHINE,SOFTWARE\Microsoft\Windows\CurrentVersion,CommonFilesDir"" "		vital			%p\Common Files		us		C:\Program Files\Common Files\
+15			ODBC (Core)	Group	63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79							us		C:\ROS\
+16			ODBC (Desktop)	Group	81 82 83 84 85 86 87 88 89 90 91 92 93 94							us		C:\ROS\
+17			ODBC (Access)	Group	103 104 105							us		C:\ROS\
+18			ODBC (SQL)	Group	123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142							us		C:\ROS\
+19			ODBC (Visual FoxPro)	Group	150 151 152 153 154 155							us		C:\ROS\
+20			ODBC (Excel)	Group	97 98 99 100							us		C:\ROS\
+21			ODBC (Text)	Group	144 145 146 147							us		C:\ROS\
+22			ODBC (Paradox)	Group	117 118 119 120							us		C:\ROS\
+23			ODBC (Oracle)	Group	108 109 110 112 113 114 115							us		C:\ROS\
+24		Setup Message	Installation of this product requires system administrator privileges.	CustomAction	"wizset32.dll, DetectAdminPrivileges"							us		C:\ROS\
+25			OLEDB (Core)	Group	157 158 160 161 162 164 165 167 168 170 171 172							us		C:\ROS\
+26			OLEDB (Kajera)	Group	175 176 177 178							us		C:\ROS\
+27			Microsoft Graph	Group	32 33 34 35 36 37 38 39 40							us		C:\ROS\
+28			VC Runtime	Group	52 53		vital					nyi		
+29			Uninstall	Group	185 186 187 188 189 190 191 192							us		C:\ROS\
+32	yes	GR8GALRY.GRA		InstallShared	"MS Graph Files,Gr8galryGra,GR8GALRY.GRA,,8"					%M		us		C:\Windows\system32\
+33	yes	GR8409.DLL		InstallShared	"MS Graph Files,Gr8409Dll,GR8409.DLL,,8"					%M		us		C:\Windows\system32\
+34	yes	MSO97RT.DLL		InstallShared	"MS Graph Files,Mso97rtDll,MSO97RT.DLL,,8"					%M		us		C:\Windows\system32\
+35	yes	GRINTL32.DLL		InstallShared	"MS Graph Files,Grintl32Dll,GRINTL32.DLL,,8"					%M		us		C:\Windows\system32\
+36	yes	GRAPH8.OLB		InstallShared	"MS Graph Files,Graph8Olb,GRAPH8.OLB,,8"					%M		us		C:\Windows\system32\
+37	yes	GRAPH8RT.SRG		InstallShared	"MS Graph Files,Graph8rtSrg,GRAPH8RT.SRG,,8"					%M		us		C:\Windows\system32\
+38	yes			InstallSysFile	"MS Graph Files,Scp32Dll"							us		C:\Windows\system32\
+39	yes	MRT7ENU.DLL		InstallShared	"MS Graph Files,Mrt7enuDll,MRT7ENU.DLL,,8"					%M		us		C:\Windows\system32\
+40	yes	GRAPH8.EXE		InstallShared	"MS Graph Files,Graph8Exe,GRAPH8.EXE,,8"					%M		us		C:\Windows\system32\
+43	yes			InstallSysFile	"System,Oleaut32Dll"							nyi		
+44	yes	OLEAUT32.DLL		Depend	43 ? 45							nyi		
+45	yes	OLEAUT32.DLL		SelfReg	"System,Oleaut32Dll"					%M		nyi		
+46	yes			InstallSysFile	"System,Olepro32Dll"							nyi		
+47	yes	OLEPRO32.DLL		Depend	46 ? 48							nyi		
+48	yes	OLEPRO32.DLL		SelfReg	"System,Olepro32Dll"					%M		nyi		
+49	yes			InstallSysFile	"System,AsycfiltDll"							nyi		
+50	yes			InstallSysFile	"System,Stdole2Tlb"							nyi		
+52	yes			InstallSysFile	"VC Runtime,MsvcrtDll"							nyi		
+53	yes			InstallSysFile	"VC Runtime,Msvcrt40Dll"							nyi		
+55	yes			InstallSysFile	"VFP Runtime,Vfp6renuDll"							us		C:\Windows\system32\
+56	yes			InstallSysFile	"VFP Runtime,Vfp6runExe"							us		C:\Windows\system32\
+57	yes	VFP6RUN.EXE		Depend	56 ? 58							us	Yes	C:\ROS\
+58	yes	VFP6RUN.EXE		CustomAction	"""wizset32.dll"",""ExecutePostSetupCommand"",""VFP6RUN.EXE /RegServer"""					%M		us		C:\Windows\system32\
+59	yes			InstallSysFile	"VFP Runtime,Vfp6rDll"							us		C:\Windows\system32\
+60	yes	VFP6R.DLL		Depend	59 ? 61							us	Yes	C:\ROS\
+61	yes	VFP6R.DLL		SelfReg	"VFP Runtime,Vfp6rDll"					%M		us		C:\Windows\system32\
+63	yes			InstallSysFile	"odbc-all,Odbc32Dll"							nyi		
+64	yes			CustomAction	"odbcstf.dll,AcmeInstallDriverManager,odbckey.inf"							us		C:\Windows\system32\
+65	yes			InstallSysFile	"odbc-all,Odbccr32Dll"							nyi		
+66	yes			InstallSysFile	"odbc-all,Ds16gtDll"							nyi		
+67	yes			InstallSysFile	"odbc-all,Ds32gtDll"							nyi		
+68	yes			InstallSysFile	"odbc-all,Odbc16gtDll"							nyi		
+69	yes			InstallSysFile	"odbc-all,Odbc32gtDll"							nyi		
+70	yes			InstallSysFile	"odbc-all,Odbcad32Exe"							nyi		
+71	yes			InstallSysFile	"odbc-all,OdbcconfExe"							nyi		
+72	yes			InstallSysFile	"odbc-all,Odbccp32Cpl"							us		C:\Windows\system32\
+73	yes			InstallSysFile	"odbc-all,OdbcinstCnt"							us		C:\Windows\system32\
+74	yes			InstallSysFile	"odbc-all,OdbcinstHlp"							us		C:\Windows\system32\
+75	yes			InstallSysFile	"odbc-all,OdbctracDll"							nyi		
+76	yes			InstallSysFile	"odbc-all,OdbcintDll"							nyi		
+77	yes			InstallSysFile	"odbc-all,Odbccp32Dll"							nyi		
+78	yes			InstallSysFile	"odbc-all,Odbccu32Dll"							nyi		
+79	yes			InstallSysFile	"odbc-all,MtxdmDll"							nyi		
+81	yes			InstallSysFile	"odbc-desktop,Msjint35Dll"							us		C:\Windows\system32\
+82	yes			InstallSysFile	"odbc-desktop,Msjter35Dll"							us		C:\Windows\system32\
+83	yes			InstallSysFile	"odbc-desktop,Odbcjt32Dll"							nyi		
+84	yes			InstallSysFile	"odbc-desktop,Odbctl32Dll"							us		C:\Windows\system32\
+85	yes			InstallSysFile	"odbc-desktop,Vbajet32Dll"							nyi		
+86	yes			InstallSysFile	"odbc-desktop,Vbar332Dll"							us		C:\Windows\system32\
+87	yes			InstallSysFile	"odbc-desktop,OdbcjetHlp"							us		C:\Windows\system32\
+88	yes			InstallSysFile	"odbc-desktop,OdbcjetCnt"							us		C:\Windows\system32\
+89	yes			InstallSysFile	"odbc-desktop,Odbcji32Dll"							nyi		
+90	yes			InstallSysFile	"odbc-desktop,ExpsrvDll"							nyi		
+91	yes	VBAME.DLL		InstallShared	"odbc-desktop,VbameDll,VBAME.DLL,,8"					%M		se		
+92	yes			InstallSysFile	"odbc-desktop,Msrepl35Dll"							us		C:\Windows\system32\
+93	yes			InstallSysFile	"odbc-desktop,Msjet35Dll"							us		C:\Windows\system32\
+94	yes	MSJET35.DLL		Depend	93 ? 95							us	Yes	C:\ROS\
+95	yes	MSJET35.DLL		SelfReg	"odbc-desktop,Msjet35Dll"					%M		us		C:\Windows\system32\
+97	yes			InstallSysFile	"odbc-excel,Odexl32Dll"							nyi		
+98	yes			CustomAction	"odbcstf.dll,AcmeInstallDriver,odbckey.inf:DA Excel"							us		C:\Windows\system32\
+99	yes			InstallSysFile	"odbc-excel,Msexcl35Dll"							us		C:\Windows\system32\
+100	yes	MSEXCL35.DLL		Depend	99 ? 101							us	Yes	C:\ROS\
+101	yes	MSEXCL35.DLL		SelfReg	"odbc-excel,Msexcl35Dll"					%M		us		C:\Windows\system32\
+103	yes			InstallSysFile	"odbc-msaccess,Msrd2x35Dll"							us		C:\Windows\system32\
+104	yes			CustomAction	"odbcstf.dll,AcmeInstallDriver,odbckey.inf:DA Access"							us		C:\Windows\system32\
+105	yes	MSRD2X35.DLL		Depend	103 ? 106							us	Yes	C:\ROS\
+106	yes	MSRD2X35.DLL		SelfReg	"odbc-msaccess,Msrd2x35Dll"					%M		us		C:\Windows\system32\
+108	yes			InstallSysFile	"odbc-oracle,Msorcl32Dll"							nyi		
+109	yes			CustomAction	"odbcstf.dll,AcmeInstallDriver,odbckey.inf:Oracle Driver"							us		C:\Windows\system32\
+110	yes	MSORCL32.DLL		Depend	108 ? 111							us	No	C:\ROS\
+111	yes	MSORCL32.DLL		SelfReg	"odbc-oracle,Msorcl32Dll"					%M		nyi		
+112	yes			InstallSysFile	"odbc-oracle,Msorcl32Cnt"							us		C:\Windows\system32\
+113	yes			InstallSysFile	"odbc-oracle,Msorcl32Hlp"							us		C:\Windows\system32\
+114	yes			InstallSysFile	"odbc-oracle,Msoracle32readmeTxt"							us		C:\Windows\system32\
+115	yes			InstallSysFile	"odbc-oracle,MtxociDll"							nyi		
+117	yes			InstallSysFile	"odbc-paradox,Odpdx32Dll"							nyi		
+118	yes			CustomAction	"odbcstf.dll,AcmeInstallDriver,odbckey.inf:DA Paradox"							us		C:\Windows\system32\
+119	yes			InstallSysFile	"odbc-paradox,Mspdox35Dll"							us		C:\Windows\system32\
+120	yes	MSPDOX35.DLL		Depend	119 ? 121							us	Yes	C:\ROS\
+121	yes	MSPDOX35.DLL		SelfReg	"odbc-paradox,Mspdox35Dll"					%M		us		C:\Windows\system32\
+123	yes			InstallSysFile	"odbc-sqlserver,Sqlsrv32Dll"							nyi		
+124	yes			CustomAction	"odbcstf.dll,AcmeInstallDriver,odbckey.inf:SQL Server Driver"							us		C:\Windows\system32\
+125	yes			InstallSysFile	"odbc-sqlserver,DbnmpntwDll"							us		C:\Windows\system32\
+126	yes			InstallSysFile	"odbc-sqlserver,DrvssrvrHlp"							us		C:\Windows\system32\
+127	yes			InstallSysFile	"odbc-sqlserver,12520437Cpx"							us		C:\Windows\system32\
+128	yes			InstallSysFile	"odbc-sqlserver,12520850Cpx"							us		C:\Windows\system32\
+129	yes			InstallSysFile	"odbc-sqlserver,Mscpxl32Dll"							nyi		
+130	yes			CustomAction	"odbcstf.dll,AcmeInstallTranslator,odbckey.inf:Translators"							us		C:\Windows\system32\
+131	yes			InstallSysFile	"odbc-sqlserver,12500852Cpx"							us		C:\Windows\system32\
+132	yes			InstallSysFile	"odbc-sqlserver,12510866Cpx"							us		C:\Windows\system32\
+133	yes			InstallSysFile	"odbc-sqlserver,12520860Cpx"							us		C:\Windows\system32\
+134	yes			InstallSysFile	"odbc-sqlserver,12520861Cpx"							us		C:\Windows\system32\
+135	yes			InstallSysFile	"odbc-sqlserver,12520863Cpx"							us		C:\Windows\system32\
+136	yes			InstallSysFile	"odbc-sqlserver,12520865Cpx"							us		C:\Windows\system32\
+137	yes			InstallSysFile	"odbc-sqlserver,SqlsodbcHlp"							us		C:\Windows\system32\
+138	yes			InstallSysFile	"odbc-sqlserver,SqlsrdmeTxt"							us		C:\Windows\system32\
+139	yes			InstallSysFile	"odbc-sqlserver,DbmssocnDll"							us		C:\Windows\system32\
+140	yes			InstallSysFile	"odbc-sqlserver,OdbcbcpDll"							nyi		
+141	yes			InstallSysFile	"odbc-sqlserver,WindbverExe"							us		C:\Windows\system32\
+142	yes			InstallSysFile	"odbc-sqlserver,InstcatSql"							us		C:\Windows\system32\
+144	yes			InstallSysFile	"odbc-text,Odtext32Dll"							nyi		
+145	yes			CustomAction	"odbcstf.dll,AcmeInstallDriver,odbckey.inf:DA Text"							us		C:\Windows\system32\
+146	yes			InstallSysFile	"odbc-text,Mstext35Dll"							us		C:\Windows\system32\
+147	yes	MSTEXT35.DLL		Depend	146 ? 148							us	Yes	C:\ROS\
+148	yes	MSTEXT35.DLL		SelfReg	"odbc-text,Mstext35Dll"					%M		us		C:\Windows\system32\
+150	yes			InstallSysFile	"odbc-vfp,VfpodbcDll"							us		C:\Windows\system32\
+151	yes			CustomAction	"odbcstf.dll,AcmeInstallDriver,odbckey.inf:DA Visual FoxPro:Y"							us		C:\Windows\system32\
+152	yes			InstallSysFile	"odbc-vfp,DrvvfpHlp"							us		C:\Windows\system32\
+153	yes			CustomAction	"odbcstf.dll,AcmeConfigDataSource,odbckey.inf:ADD:Microsoft Visual FoxPro Driver:DSN=Visual FoxPro Database|SourceDB=|SourceType=DBC||"							us		C:\ROS\
+154	yes			InstallSysFile	"odbc-vfp,DrvvfpCnt"							us		C:\Windows\system32\
+155	yes			InstallSysFile	"odbc-vfp,VfpodbcTxt"							us		C:\Windows\system32\
+157	yes			CopyFile	"oledb-core,MsdaerDll"					%14\system\ole db		se		
+158	yes	MSDAER.DLL		Depend	157 ? 159							us	No	C:\ROS\
+159	yes	MSDAER.DLL		SelfReg	"oledb-core,MsdaerDll"					%14\system\ole db		nyi		
+160	yes			CopyFile	"oledb-core,MsdaerrDll"					%14\system\ole db		us		C:\Program Files\Common Files\system\ole db\
+161	yes			CopyFile	"oledb-core,MsdapsDll"					%14\system\ole db		se		
+162	yes	MSDAPS.DLL		Depend	161 ? 163							us	No	C:\ROS\
+163	yes	MSDAPS.DLL		SelfReg	"oledb-core,MsdapsDll"					%14\system\ole db		nyi		
+164	yes			CopyFile	"oledb-core,MsdaenumDll"					%14\system\ole db		se		
+165	yes	MSDAENUM.DLL		Depend	164 ? 166							us	No	C:\ROS\
+166	yes	MSDAENUM.DLL		SelfReg	"oledb-core,MsdaenumDll"					%14\system\ole db		nyi		
+167	yes			CopyFile	"oledb-core,MsdattDll"					%14\system\ole db		se		
+168	yes	MSDATT.DLL		Depend	167 ? 169							us	No	C:\ROS\
+169	yes	MSDATT.DLL		SelfReg	"oledb-core,MsdattDll"					%14\system\ole db		nyi		
+170	yes			CopyFile	"oledb-core,Msdatl2Dll"					%14\system\ole db		us		C:\Program Files\Common Files\system\ole db\
+171	yes			CopyFile	"oledb-core,MsdadcDll"					%14\system\ole db		se		
+172	yes	MSDADC.DLL		Depend	171 ? 173							us	No	C:\ROS\
+173	yes	MSDADC.DLL		SelfReg	"oledb-core,MsdadcDll"					%14\system\ole db		nyi		
+175	yes			CopyFile	"oledb-kajera,MsdasqlrDll"					%14\system\ole db		se		
+176	yes			CopyFile	"oledb-kajera,Msdasqlreadme.txt"					%14\system\ole db		us		C:\Program Files\Common Files\system\ole db\
+177	yes			CopyFile	"oledb-kajera,MsdasqlDll"					%14\system\ole db		se		
+178	yes	MSDASQL.DLL		Depend	177 ? 179							us	No	C:\ROS\
+179	yes	MSDASQL.DLL		SelfReg	"oledb-kajera,MsdasqlDll"					%14\system\ole db		nyi		
+181				CustomAction	"""wizset32.dll"",""DetectRegData"",""CLASSES\MSGraph.Application"""					%M		us		C:\Windows\system32\
+182				Depend	181 ?  : 183							us	Yes	C:\ROS\
+183				CustomAction	"""wizset32.dll"",""ExecutePostSetupCommand"",""GRAPH8.Exe /RegServer"""					%M		nyi		
+185				AddRegData	"LOCAL,Software\Microsoft\Windows\CurrentVersion\Uninstall\ROS Installation ,DisplayName,ROS Installation ,REG_SZ"							us		C:\ROS\
+186				AddRegData	"LOCAL,Software\Microsoft\Windows\CurrentVersion\Uninstall\ROS Installation ,UninstallString,%s\setup\setup.exe,REG_SZ"					%d		us		C:\ROS\
+187				CopySection	Setup					%d\setup		us		C:\ROS\setup\
+188				CopyFile	"VC Runtime,Msvcrt40Dll"					%d\setup		us		C:\ROS\setup\
+189				CopyFile	"VC Runtime,MsvcrtDll"					%d\setup		us		C:\ROS\setup\
+190				CopyFile	"odbc-all,Odbccp32Dll"					%d\setup		us		C:\ROS\setup\
+191				CopyFile	"odbc-all,OdbcintDll"					%d\setup		us		C:\ROS\setup\
+192				WriteTableFile	setup.stf					%d\setup		us		C:\ROS\setup\
